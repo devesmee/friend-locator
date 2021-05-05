@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Android_2</string>
+    <string name="fragment_login_email">Email</string>
+    <string name="fragment_login_password">Password</string>
+    <string name="fragment_login_login_button">Login</string>
+    <string name="fragment_login_no_account">Don\'t have an account?</string>
+    <string name="fragment_basic_register_next_step">Next step</string>
+    <string name="fragment_basic_register_already_account">Already have an account?</string>
+    <string name="fragment_basic_register_username">Username</string>
+    <string name="fragment_profile_register_text">Almost there,</string>
+    <string name="fragment_profile_register_register">Register</string>
+    <string name="fragment_profile_register_profile_picture">Profile picture</string>
+    <string name="fragment_profile_register_age">Age</string>
+    <string name="fragment_profile_register_gender">Gender</string>
+    <string name="fragment_profile_register_profession">Profession</string>
+    <string name="error_general">Something went wrong. Please try again.</string>
+    <string name="error_empty_text_fields">Please fill in all fields.</string>
+    <string name="error_invalid_email">Please fill in a valid email.</string>
+    <string name="error_wrong_password">The password is incorrect.</string>
+    <string name="error_invalid_user">There is no user with this email.</string>
+    <string name="error_password_instructions">The password should be at least 6 characters.</string>
+</resources>

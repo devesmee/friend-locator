@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicRegisterFragment"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emailRegisterLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_text_field"
+        app:layout_constraintStart_toStartOf="@id/nextRegisterButton"
+        app:layout_constraintEnd_toEndOf="@id/nextRegisterButton"
+        app:layout_constraintBottom_toTopOf="@id/passwordRegisterLayout"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/iconEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:id="@+id/emailRegisterTextField"
+            android:hint="@string/fragment_login_email"
+            android:inputType="textEmailAddress"
+            style="@style/EditTextField"
+            app:layout_constraintStart_toEndOf="@id/iconEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/passwordRegisterLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_text_field"
+        app:layout_constraintStart_toStartOf="@id/nextRegisterButton"
+        app:layout_constraintEnd_toEndOf="@id/nextRegisterButton"
+        app:layout_constraintBottom_toTopOf="@id/usernameRegisterLayout"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/iconPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_password"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="17dp"/>
+
+        <EditText
+            android:id="@+id/passwordRegisterTextField"
+            android:hint="@string/fragment_login_password"
+            android:inputType="textPassword"
+            style="@style/EditTextField"
+            app:layout_constraintStart_toEndOf="@id/iconPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/usernameRegisterLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_text_field"
+        app:layout_constraintStart_toStartOf="@id/nextRegisterButton"
+        app:layout_constraintEnd_toEndOf="@id/nextRegisterButton"
+        app:layout_constraintBottom_toTopOf="@id/nextRegisterButton"
+        android:layout_marginBottom="80dp">
+
+        <ImageView
+            android:id="@+id/iconUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_username"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"/>
+
+        <EditText
+            android:id="@+id/usernameRegisterTextField"
+            android:hint="@string/fragment_basic_register_username"
+            android:inputType="text"
+            style="@style/EditTextField"
+            app:layout_constraintStart_toEndOf="@id/iconUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/basicRegisterErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_empty_text_fields"
+        android:textColor="@color/text_error"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameRegisterLayout"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/nextRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="@string/fragment_basic_register_next_step"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/alreadyAccountText"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/alreadyAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_basic_register_already_account"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="150dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
